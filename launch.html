@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  
+  <head id="adapt" data-gwd-animation-mode="proMode">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="generator" content="Google Web Designer 1.1.3.1015">
+    <title></title>
+    <style>
+      body {
+        background-color: rgb(255, 255, 255);
+      }
+      h1 {
+        color: rgb(0, 0, 0);
+        text-align: center;
+      }
+      p {
+        text-align: center;
+        color: rgb(0, 0, 0);
+        width: 440px;
+        margin: 200px auto auto;
+        font-family: sans-serif;
+        font-size: 20px;
+      }
+      a {
+        color: rgb(0, 164, 200);
+      }
+      .gwd-body {
+        width: 100%;
+        height: 100%;
+        -webkit-transform-style: preserve-3d;
+        -webkit-transform: perspective(1400px) matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+        background-image: none;
+      }
+    </style>
+  </head>
+  
+  <body class="gwd-body">
+    <p>Launch the course by selecting this link:
+      <br>
+      <a href="#" id="link">Adapt v1.0.1 - testing</a>
+      <br>
+      <br>If the course doesn’t launch within 5 seconds please ensure all pop-up blockers are disabled and reselect the link.</p>
+    <script>
+      var link = document.getElementById('link');
+
+      document.onload = function() {
+        window.open("index.html");
+        return false;
+      }
+      
+      link.onclick = function(event){
+          if(event) event.preventDefault();
+          window.open("index.html");
+          return false;
+      }
+    </script>
+  </body>
+
+</html>
